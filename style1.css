@@ -1,0 +1,616 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* First flex container created to define the length for helping to make the webpage much responsive  */
+.flex-container {
+	display:flex;
+	flex-wrap:wrap;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #232843;
+	
+}
+.flex-left {
+	color: #DBDED4;
+	padding:27px;
+	padding-left:70px;
+	flex:1;
+}
+/*top left line Do you need help?*/
+.top-navi-left {
+  font-family: 'Roboto';
+  font-size: 1.1vw;
+  color: #DEE7E7;
+}
+.flex-right{
+	padding:18px;
+	flex:1;
+	text-align:center;
+}
+/*Live chat button-->*/
+
+.button-1{
+	padding: 12px 20px;
+	background-color:#FFDF56;
+	color:white;
+	border:1px solid white;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+/*There is ahover effect applied to it, it turns whitish and text on it turns blue*/
+.button-1:hover {
+  background-color: #FFFFFF;
+  color: #232843;
+}
+/*Phone number of top right*/
+.phn{
+	color:white;
+	font-size:25px;
+	font-family: 'Roboto';
+}
+/*vertical line between Live Chat button and phone number*/
+.vl{
+	border-right: 1px solid white;
+	padding: 11px 10px 20px;
+	margin-right:14px;
+}
+/*navigation list to the right top*/
+.navi{
+  list-style-type: none;
+  overflow: hidden;
+  font-family: 'ralewaysemibold', sans-serif;
+  font-size:1vw;
+  padding-top:16px;
+}
+
+.navi li {
+  float: right;
+}
+
+.navi li a {
+  display: block;
+  color: #6A7671;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+/*hover effect on the list, on moving the cursor over the list you will be able to see the list text turning yellow*/
+.navi li a:hover{
+	color: #FFDF56;
+}
+.navi-right{
+	float:right;
+}
+.flex-container1{
+	display:flex;
+	flex-wrap:wrap;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.item1{
+	flex:1;
+	padding : 15px;
+}
+.item2{
+	flex:1;
+}
+/*parachute image*/
+.slider-img img{
+	opacity: 0.8;
+	position: relative;
+}
+.slider-img{
+	margin-bottom:-4px;
+}
+.slider-text{
+	position: absolute;
+	top: 430px;
+	right: 250px;
+	color:#FFFFFF;
+}
+.slider-text1{
+	font-size:2.5vw;
+	font-family: 'Sanchez Regular', sans-serif;
+	letter-spacing: 6px;
+	font-weight: normal;
+}
+.slider-text2{
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.70rem;
+	font-weight: normal;
+}
+/*image is staying intact even on inspecting on mobile resolution, so its responsive*/
+.img-responsive{
+	width: 100%;
+  height: auto;
+}
+.text-center{
+	text-align:center;
+}
+.search-box{
+	border :8px solid #ddd;
+	padding :15px 15px;
+}
+.dropdown{
+    width: 6.25rem;
+    height: 56px;
+    padding: 10px;
+    font-size: 1.2vw;
+    color: #555;
+    background-color: #ffe13e;
+    background-image: none;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+}
+/*input in searchbar*/
+input{
+	min-width: 17.1875rem;
+    height: 35px;
+    background: #fff;
+    padding: 10px;
+    border: 0px;
+    font-size: 1.2vw;
+	font-family: 'ralewaylight', sans-serif;
+}
+/*check availability button*/
+.input1{
+	max-width: 9.6875rem;
+    height: 56px;
+    background: #ffe13e;
+    color: #202242;
+    padding: 0px 15px;
+    border: 0px;
+    margin-left: -4px;
+    border-left: 1px solid #fff;
+    font-size: 1.2vw;
+    font-family: 'ralewaybold', sans-serif;
+    color: #fff;
+    outline: none;
+}
+/*webhost services*/
+.item3{
+	background-color:#232843;
+	flex:1;
+	padding: 54px 20px;
+	color:white;
+}
+/*Domain Services*/
+.item4{
+	background-color:#FFDF56;
+	flex:1;
+}
+.item4 h1{
+	font-size: 10rem;
+    font-family: 'ralewaybold', sans-serif;
+    color: #202242;
+    margin-bottom: 25px;
+	}
+/*flex container for Webhost services and Domain Services*/
+.flex-container2{
+	display:flex;
+	flex-wrap:wrap;
+	margin:0px;
+	max-width:100%;
+	
+}
+/*para under Webhost services*/
+.item3 p{
+	font-size: 1.3vw;
+    font-family: 'Raleway', sans-serif;
+	color:#DEE7E7;
+	font-weight: normal;
+	padding :22px 0px;
+}
+.item3 h2{
+	font-size:3vw;
+	padding: 21px 0px;
+}
+/*button in WebHost services*/
+.button-2{
+	padding: 15px 50px;
+	background-color:#232843;
+	color:white;
+	border:1px solid white;
+	transition-duration: 0.4s;
+	cursor: pointer;	
+	font-size:16px;
+}
+/*hover effect it turns yellow and text remains blue*/
+.button-2:hover {
+  background-color: #FFDF56;
+  color: #232843;
+}
+/*domain services*/
+.item4{
+	color:white;
+	padding:30px;
+}
+.item4 h2{
+	font-size:3vw;
+	padding:21px 0px;
+}
+/*para under Domain Services*/
+.item4 p{
+	font-size:1.4vw;
+	font-family: 'Raleway', sans-serif;
+	padding :22px 0px;
+	}
+	
+/*button in domain services*/
+.button-3{
+	padding: 15px 50px;
+	background-color:#FFDF56;
+	color:white;
+	border:1px solid white;
+	transition-duration: 0.4s;
+	cursor: pointer;	
+	font-size:16px;
+}
+/*hover effect on button turns to blue and text white*/
+.button-3:hover {
+  background-color: #232843;
+  color: white;
+}
+/*Our Features*/
+.our-feat{
+	background-image: url("featurebg.png");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-color:#fbf8f1;
+	padding-top:140px;
+	}
+/*Heading for Our features*/
+.our-feat h2{
+	font-family: 'ralewaybold', sans-serif;
+    font-size: 3rem;
+    color: #202242;
+	margin:0px;
+}
+/*Sub heading uder our features*/
+.our-feat h3{
+	font-family: 'ralewaybold', sans-serif;
+	font-weight:normal;
+}
+/*flex container for below Our Features icons*/
+.flex-container3{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+.flex-container3 div{
+	width:310px;
+	text-align: center;
+	margin: 10px;
+}
+/*horizontal line under the icons of Our Features*/
+.under-line{
+	width:70px!important;
+	height: 3px;
+    background-color: #8d8d99;
+	margin-top:30px!important;
+	margin-left: 119px!important;
+}
+/*heading Live Support, Cloud technology, Hi Tech Database, Live Monitoring*/
+.flex-container3 h3{
+	font-size: 1.875rem;
+	color: #f4d320;
+	font-family: 'Sanchez Regular', sans-serif;   
+}
+/*para under Live Support*/
+.item5 p{
+	font-family: 'Raleway', sans-serif;
+} 
+/*para under Cloud Technology*/
+.item6 p{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*para under Hi Tech Database*/
+.item7 p{
+	font-family: 'Raleway', sans-serif;
+}
+/*para under Live Monitoring*/
+.item8 p{
+	font-family: 'Raleway', sans-serif;
+}
+/*Flex container for Our Clients*/
+.flex-container4{
+	display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/*Our clients*/
+.item9{
+    flex: 0.3;
+    padding: 36px;
+}
+/*Our clients para*/
+.item9 p{
+	font-size:1vw;
+	font-family: 'Raleway', sans-serif;
+	padding-top:10px;
+}
+/*Our clients heading*/
+.item9 h2{
+	    font-family: 'Ralewaybold', sans-serif;
+		font-size:3vw;
+		padding-bottom:10px;
+		
+}
+/*images c1,c2,c3,c4*/
+.item10{
+	flex:0.7;
+	padding:30px;
+}
+/*images passed as navigation list*/
+.navi1{
+	list-style-type: none;
+    overflow: hidden;
+}
+.navi-left {
+    float: left;
+}
+li.navi-left {
+    padding: 10px;
+}
+/*flex container5 for the divs below Our Clients Anna blocks*/
+.flex-container5{
+	display:flex;
+	flex-wrap:wrap;
+	margin-bottom:55px;
+}
+.flex-container5 div{
+	margin:28px 35px;
+	padding:28px;
+	background-color: #faf9f9;
+}
+/*Anna block1*/
+.item11{
+	position:relative;
+	flex:1;
+}
+/*Anna block1*/
+.item12{
+	position:relative;
+	flex:1;
+}
+/*Anna block1*/
+.item13{
+	position:relative;
+	flex:1;
+}
+/*Anna block1 paragraph*/
+.item11 p{
+	font-size:1vw;
+	font-family: 'Sanchez', serif;
+}
+/*Anna block2 paragraph*/
+.item12 p{
+	font-size:1vw;
+	font-family: 'Sanchez', serif;
+}
+/*Anna block3 paragraph*/
+.item13 p{
+	font-size:1vw;
+	font-family: 'Sanchez', serif;
+}
+/*Anna block1 image*/
+.item11 img{
+	position:absolute;
+	left: 250px;
+	border-radius: 50%;
+}
+
+/*Anna block2 image*/
+.item12 img{
+	position:absolute;
+	left: 250px;
+	border-radius: 50%;
+}
+
+/*Anna block1 image*/
+.item13 img{
+	position:absolute;
+	left: 250px;
+	border-radius: 50%;
+}
+
+/*Anna block1 name*/
+.item11 span{
+	font-size:1.2vw;
+}
+
+/*Anna block2 name*/
+.item12 span{
+	font-size:1.2vw;
+}
+
+/*Anna block3 name*/
+.item13 span{
+	font-size:1.2vw;
+}
+/*button for Plans and Pricing*/
+.button-4{
+	padding: 15px 25px;
+    background-color: #FFDF56;
+	font-size:1.5vw;
+    color: white;
+    border: 1px solid white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+	margin:25px;
+}
+/*hover effect turns it to whitish and text blue*/
+.button-4:hover {
+    background-color: #FFFFFF;
+    color: #232843;
+}
+/*heading - Do you want to view Plans & Pricing*/
+.flex-left2{
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+	font-size:2vw
+}
+.flex-left2 h2{
+	margin-bottom:10px;
+}
+
+/*line under Do you want to view Planvw;
+	color:#6e709c;*/
+.flex-left2 p{
+	font-size:1.2vw;
+}
+/*flex container for Do you want to view Plans & Pricing*/
+.flex-container6{
+	padding:30px;	
+}
+/*footer content under section map part*/
+.footer-content{
+	background-color:#363855;
+	padding:30px;
+	display:flex;
+	flex-wrap:wrap;
+	}
+/*navigation list to the right in footer*/
+.footer-list{
+	list-style-type:none;
+	text-align:right;
+}
+/* .footer-right{
+	margin-left: 255px;
+} */
+
+.footer-list li{
+	padding:28px 0px 10px;
+	border-bottom:1px solid white;
+	}
+	
+.footer-list li a{
+	text-decoration:none;
+	color:#fff;
+	font-family:'Roboto';
+}
+/*hover effect over navigation list in footer right it turns text yellow*/
+.footer-list li a:hover{
+	color: #FFDF56;
+}
+/* Heading-Navigation*/
+.footer-content h2{
+	color:white;
+	font-family: 'ralewaysemibold', sans-serif;
+	font-size:2vw;
+}
+/*icons of twitter, instagram, google+ from font awesome */
+.social a{
+	color:#ffe13e;
+	padding-right:15px;
+	font-size:2vw
+}
+/* hover effect on icons of twitter, instagram, google+ it turns it to white*/
+.social a:hover{
+	color:white;
+}
+/*Last line in footer Made with heart by bootstrap themes*/
+.foot-foot{
+	background-color:#363855;
+	color:white;
+	font-size: 1.1rem;
+	padding:20px 0px;
+}
+/*color for Bootstrap theme*/
+.foot-foot a{
+text-decoration:none;
+color: #ffe13e;
+padding: 0px 10px;
+}
+/*icon of heart from font awesome*/
+.fa-heart{
+padding: 0px 10px;	
+color:red;
+}
+.footer-right{
+	   margin-left: 650px;
+}
+.footer-img{
+	width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+body{ 
+	font-family: 'Roboto', sans-serif;
+}
+/*media query used to make it responsive as it can be adjusted throughout the screen*/
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .slider-text {
+    right: 145px;
+  }
+  .footer-right{
+	  margin-left:350px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .item11 img{
+	left:145px;
+}
+.item12 img{
+	left:145px;
+}
+.item13 img{
+	left:145px;
+}
+}
+
+
